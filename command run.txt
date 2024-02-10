@@ -1,0 +1,12 @@
+php artisan migrate
+php artisan migrate:refresh
+php artisan db:seed
+php artisan passport:install
+
+composer require laravel/socialite
+//
+composer require maatwebsite/excel
+composer require maatwebsite/excel --ignore-platform-reqs
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+
+
